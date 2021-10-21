@@ -13,7 +13,6 @@ function init() {
   var vol = document.getElementById('volume');
   var menu = document.getElementById('horn-select');
 
-
   menu.addEventListener('change', (event) =>{
     picture.setAttribute('src','assets/images/' + event.target.value +'.svg');
     horn_sound[0].setAttribute('src', 'assets/audio/'+ event.target.value +'.mp3');
