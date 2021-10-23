@@ -14,25 +14,13 @@ function init() {
   var menu = document.getElementById('horn-select');
 
   menu.addEventListener('change', (event) =>{
-    /*if(menu.value == 'air-horn'){
-      picture.setAttribute('src', 'assets/images/air-horn.svg');
-      horn_sound[0].setAttribute('src', 'assets/audio/air-horn.mp3');
-    } 
-    else if(menu.value == 'car-horn'){
-      picture.setAttribute('src', 'assets/images/car-horn.svg');
-      horn_sound[0].setAttribute('src', 'assets/audio/car-horn.mp3');
-    }
-    else{
-      picture.setAttribute('src','assets/images/party-horn.svg');
-      horn_sound[0].setAttribute('src', 'assets/audio/party-horn.mp3');
-    }*/
     picture.setAttribute('src','assets/images/' + event.target.value +'.svg');
     horn_sound[0].setAttribute('src', 'assets/audio/'+ event.target.value +'.mp3');
   });
 
   play_button.addEventListener('click', (event) =>{
     horn_sound[0].play();
-    if(menu.value == 'party-horn') {
+    if(menu.value == 'party-horn' && vol.value != 0) {
       jsConfetti.addConfetti();
     }
   });
