@@ -20,7 +20,7 @@ function init() {
 
   play_button.addEventListener('click', (event) =>{
     horn_sound[0].play();
-    if(menu.value == 'party-horn') {
+    if(menu.value == 'party-horn' && vol.value != 0) {
       jsConfetti.addConfetti();
     }
   });
