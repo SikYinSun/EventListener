@@ -25,7 +25,7 @@ function init() {
     }
   });
 
-  vol.addEventListener('change', (event) =>{
+  vol.addEventListener('input', (event) =>{
     if(event.target.value == 0){
       volPicture.setAttribute('src', 'assets/icons/volume-level-0.svg');
     }
