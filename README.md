@@ -6,6 +6,10 @@ This is an exercise designed to practice the implementation of the addEventListe
 
 Furthermore, in this exercise, you can also explore the utilization of the speechSynthesis property in JavaScript. The speechSynthesis API provides a way to convert text into synthesized speech, allowing developers to incorporate text-to-speech capabilities into their web applications. By harnessing the power of the speechSynthesis property in JavaScript, you can enable text-to-speech functionality that supports different languages. The speechSynthesis API provides access to a variety of voices, each representing a specific language or accent, allowing you to cater to a diverse range of users. With a few lines of code, you can select the desired voice for synthesis, providing localized and multilingual experiences for your application's users.
 
+## Demo
+
+![](./assets/images/demo.gif)
+
 ## Run Locally
 
 Clone the project
@@ -23,7 +27,6 @@ Go to the project directory
 Using VScode and get the Live Server Extensions and Interact with it
 
 <!-- Github Action: https://github.com/SikYinSun/github-actions-for-ci/issues/7   -->
-
 
 ## Deploy
 
